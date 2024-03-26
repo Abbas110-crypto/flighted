@@ -55,8 +55,8 @@
 @media (min-width:350px) and (max-width:500px){
     .main{
         margin-top: 5%;
-        width: auto;
-        height: auto;
+        width: 400px;
+        height: 300px;
         border: 1px solid var(--secondary);
         border-radius: 50px;
     }

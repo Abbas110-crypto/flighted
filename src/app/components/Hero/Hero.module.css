@@ -107,14 +107,23 @@
 .CompanySlider{
     border-top: solid 1px #fff;
     border-bottom: solid 1px #fff;
+    width: 100%; /* Adjust this value according to your layout */
+
 }
 .CompanyItem{
     margin-top: 15%;
     margin-bottom: 15%;
+    display: inline-block;
 }
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust this value according to your layout */
+  }
 .mobileicon{
     display: none;
 }
+
 @media (min-width:370px) and (max-width:500px){
     .main{
         margin-top: 30%;

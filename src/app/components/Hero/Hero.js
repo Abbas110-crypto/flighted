@@ -142,7 +142,7 @@ function Hero() {
         </Row>
         <Row>
         <div className={styles.CompanySlider}>   
-        <Marquee direction='right' >          
+        <Marquee direction='right' className={styles.marquee}>          
         <Image
                src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
                alt="Socialmedia"
