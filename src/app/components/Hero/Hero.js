@@ -96,42 +96,42 @@ function Hero() {
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/nlDQJcHiY0TNiL2K11FqlHMySA.webp?scale-down-to=1024" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/xy8L64T5nIsNMMhDkHYieGeBgc.webp?scale-down-to=4096" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://i.ibb.co/ZXfZ5Gf/frame4.jpg" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://i.ibb.co/HG5dfmK/frame3.jpg" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://i.ibb.co/qFWM9j7/frame2.jpg" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
                className={styles.ImageSlider}
             />
         <Image
-               src="https://framerusercontent.com/images/ovMyIXxOXHrFNz9MmucK2VLORns.webp?scale-down-to=1024" // Path to your image inside the public directory
+               src="https://i.ibb.co/JBFt8z1/frame1.jpg" // Path to your image inside the public directory
                alt="Socialmedia"
                width='300'
                height='450'
@@ -151,41 +151,54 @@ function Hero() {
                className={styles.CompanyItem}
             />
         <Image
-               src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/G47sLGXvcnN3K2qSj5wn1D6BJOE.webp?scale-down-to=512" // Path to your image inside the public directory
                alt="Socialmedia"
                width='172'
                height='30'
                className={styles.CompanyItem}
             />
        <Image
-               src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/oaRyqdd6UR7IVbs1gzNKoRnrGwg.webp" // Path to your image inside the public directory
                alt="Socialmedia"
                width='172'
                height='30'
                className={styles.CompanyItem}
             />
         <Image
-               src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/cOK3iXOlaJYyRP9O1IUFS0L1Hc.webp?scale-down-to=512" // Path to your image inside the public directory
                alt="Socialmedia"
                width='172'
                height='30'
                className={styles.CompanyItem}
             />
         <Image
-               src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/bysDmoRskSv1ri2rxamm0DPLISY.webp?scale-down-to=512" // Path to your image inside the public directory
                alt="Socialmedia"
                width='172'
                height='30'
                className={styles.CompanyItem}
             />
         <Image
-               src="https://framerusercontent.com/images/ZD5q25u7sbIsN7Bhxh7Bu186Cw.webp?scale-down-to=512" // Path to your image inside the public directory
+               src="https://framerusercontent.com/images/HrYUi3s6hPyCalkdF7EaHonZH4.webp" // Path to your image inside the public directory
                alt="Socialmedia"
-               width='100'
+               width='172'
                height='30'
                className={styles.CompanyItem}
             />
-        
+        <Image
+               src="https://framerusercontent.com/images/zE8IS4tyVpjZrqO776fkrwpHUWs.webp" // Path to your image inside the public directory
+               alt="Socialmedia"
+               width='172'
+               height='30'
+               className={styles.CompanyItem}
+            />
+         <Image
+               src="https://framerusercontent.com/images/1GKrJHyC5wwd62Czj4puIWyIGbU.webp?scale-down-to=512" // Path to your image inside the public directory
+               alt="Socialmedia"
+               width='172'
+               height='30'
+               className={styles.CompanyItem}
+            />
         </Marquee>
         </div> 
         </Row>

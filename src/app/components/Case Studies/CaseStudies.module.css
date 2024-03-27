@@ -42,6 +42,7 @@
     background: var(--secondary);
     cursor: pointer;
     margin-top: 5%;
+    margin-left: 15px;
 }
 
 .image {
