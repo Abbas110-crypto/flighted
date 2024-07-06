@@ -51,12 +51,12 @@
     width: 200px;
     height: 40px;
     justify-content: center;
-    background-image: linear-gradient(to right, #ed1e78, #faaf40);
+    background-color: #D0D0D0;
     font-size: 16px;
     font-family: "Clash Display", sans-serif;
     font-weight: 500;
     line-height: 27px;
 }
 .login_button:hover{
-    background-image: linear-gradient(to right, #faaf40, #ed1e78);
+    background-color: #D0D0D0;
 }   

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/admin/dashboard/blog/page.js", "src/app/admin/page.js", "src/app/admin/Sidebar/Sidebar.js", "src/app/admin/login/page.js", "src/app/admin/dashboard/create-blog/page.js", "src/app/blog/[id]/page.js", "src/app/contact/page.js", "src/app/admin/dashboard/queries/page.js"  ],
+, "src/app/admin/dashboard/case-studies/page.js", "src/app/admin/page.js", "src/app/admin/Sidebar/Sidebar.js", "src/app/admin/login/page.js", "src/app/admin/dashboard/create-case-studies/page.js", "src/app/blog/[id]/page.js", "src/app/contact/page.js", "src/app/admin/dashboard/queries/page.js"  ],
   "exclude": [
     "node_modules"
   ]

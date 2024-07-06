@@ -1,16 +1,16 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { Input, Button, Table, Modal, message, Spin } from 'antd';
-import styles from '../../dashboard/blog/blog.module.css';
+import styles from './CaseStudies.module.css';
 import Sidebar from '../../Sidebar/Sidebar';
-import { SearchOutlined, DeleteOutlined, EditOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
+import { DeleteOutlined, EditOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import api from '../../../axiosInterceptor/axiosInterceptor';
 import { useRouter } from 'next/navigation';
 
 const { Search } = Input;
 const { confirm } = Modal;
 
-const AdBlog = () => {
+const CaseStudies = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
@@ -118,7 +118,7 @@ const AdBlog = () => {
   const fetchData = async () => {
     try {
       setLoading(true); // Set loading to true when starting API call
-      router.push('./create-blog');
+      router.push('./create-case-studies');
     } catch (error) {
       console.error('Error data:', error);
       setTokenAvailable(false);
@@ -126,7 +126,7 @@ const AdBlog = () => {
       setLoading(false); // Set loading to false when API call completes
     }
   }; 
-
+  useEffect(() => { document.body.style.backgroundColor = '#fff' }, [])
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -140,17 +140,16 @@ const AdBlog = () => {
     const filtered = data.filter((item) => item.title.toLowerCase().includes(value.toLowerCase()));
     setFilteredData(filtered);
   };
-
-  // if (!tokenAvailable) {
-  //   router.push('/admin/login');
-  //   return null;
-  // }
+  if (!tokenAvailable) {
+    router.push('/admin/login');
+    return null;
+}
 
   return (
-    <>
+    <div>
       <Sidebar />
       <div>
-        <h1 className={styles.heading}>BLOGS</h1>
+        <h1 className={styles.heading}>CASE STUDIES</h1>
         <Search
           placeholder="input search text"
           allowClear
@@ -168,12 +167,12 @@ const AdBlog = () => {
               loading={loading}
             />
             <Button onClick={fetchData} className={styles.button}>
-              CREATE
+              ADD CASE STUDY
             </Button>
           </>
       </div>
-    </>
+    </div>
   );
 };
 
-export default AdBlog;
+export default CaseStudies;

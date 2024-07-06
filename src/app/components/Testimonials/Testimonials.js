@@ -13,49 +13,49 @@ function Testimonials() {
                 <div className={styles.slider}>
                     <Marquee direction='left'>
                         <Image
-                            src="https://i.ibb.co/NnPK0hQ/15.jpg" // Path to your image inside the public directory
+                            src="https://i.ibb.co/8sZ40Y6/4-3.png" // Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/nQpD3JG/14.jpg" // Path to your image inside the public directory
+                            src="https://i.ibb.co/ZM5GzBn/3-2.png" // Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/7pTwPxG/13.jpg" // Path to your image inside the public directory
+                            src="https://i.ibb.co/m453SnV/2-3.png" // Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/2SY4twy/11.jpg" // Path to your image inside the public directory
+                            src="https://i.ibb.co/YkhfCFD/1-2.png" // Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/nQpD3JG/14.jpg"
+                            src="https://i.ibb.co/m453SnV/2-3.png"
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/7pTwPxG/13.jpg"// Path to your image inside the public directory
+                            src="https://i.ibb.co/ZM5GzBn/3-2.png"// Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'
                             className={styles.ImageSlider}
                         />
                         <Image
-                            src="https://i.ibb.co/2SY4twy/11.jpg" // Path to your image inside the public directory
+                            src="https://i.ibb.co/8sZ40Y6/4-3.png" // Path to your image inside the public directory
                             alt="Socialmedia"
                             width='300'
                             height='450'

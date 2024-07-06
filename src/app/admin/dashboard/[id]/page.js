@@ -2,17 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Col, Input, Row, Upload, message } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import styles from '../create-blog/createblog.module.css';
+import styles from '../create-case-studies/CreateCaseStudies.module.css';
 import 'react-quill/dist/quill.snow.css';
 import Sidebar from '../../Sidebar/Sidebar';
 import dynamic from 'next/dynamic';
-import { useParams, useRouter } from 'next/navigation'; // Changed from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'; 
 import api from '../../../axiosInterceptor/axiosInterceptor';
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 const { TextArea } = Input;
 
-const UpdateBlog = () => {
+const UpdateCaseStudies = () => {
     const router = useRouter();
     const params = useParams();
     const [blog, setBlog] = useState(null);
@@ -24,7 +24,7 @@ const UpdateBlog = () => {
     const [fileList, setFileList] = useState([]);
 
     const id = params.id;
-
+    useEffect(() => { document.body.style.backgroundColor = '#fff' }, [])
     useEffect(() => {
         const fetchBlogDetails = async () => {
             try {
@@ -50,7 +50,7 @@ const UpdateBlog = () => {
             formData.append('title', title);
             formData.append('description', description);
             formData.append('content', content);
-            FormDataEvent.append('DateButton', DateButton);
+            formData.append('DateButton', DateButton);
             if (fileList.length > 0) {
                 formData.append('image', fileList[0].originFileObj);
             }
@@ -62,7 +62,7 @@ const UpdateBlog = () => {
             });
 
             console.log('Form data Updated successfully:', response.data);
-            router.push('./blog');
+            router.push('./case-studies');
             message.success('Blog Updated');
         } catch (error) {
             console.error('Error updating blog:', error);
@@ -171,4 +171,4 @@ const UpdateBlog = () => {
     );
 };
 
-export default UpdateBlog;
+export default UpdateCaseStudies;

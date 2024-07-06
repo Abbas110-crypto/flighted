@@ -34,9 +34,22 @@
     display: flex;
     justify-content: center;
 }
-
-.active {
-background-color: #ed1e78 !important;
+.logoutbtn{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     border-radius: 50px;
+    border: 0;
+    background: transparent;
+}
+.active {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 50px;
+background-color: #9f8e9b !important;
+    border-radius: 20px;
     color: #000;
   }

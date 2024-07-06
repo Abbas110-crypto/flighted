@@ -52,32 +52,27 @@ function Hero() {
                width='66'
                height='68'
                className={styles.icon}
-            /> We increase revenue for<br />DTC Brands <Image
+            />Empowering Financial Decisions<Image
                src="https://framerusercontent.com/images/yif60XXVBZ3B2fKl4ucOuqIUE.webp" // Path to your image inside the public directory
                alt="Socialmedia"
                width='66'
                height='68'
                className={styles.icon}
-            /> through<br /><span className={styles.hd3}>better ads, <Image
+            /><span className={styles.hd3}> Driving Business Success<Image
             src="https://framerusercontent.com/images/sttkfVr9RuKQSFMZf5OfgMt8fo.webp" // Path to your image inside the public directory
             alt="Socialmedia"
             width='66'
             height='68'
             className={styles.icon}
-         /> landing pages<br />& paid media expertise <Image
-         src="https://framerusercontent.com/images/i8tyymRuUnNJ29ThCDBRfVIfxt4.webp" // Path to your image inside the public directory
-         alt="Socialmedia"
-         width='66'
-         height='68'
-         className={styles.icon}
-      /></span> </p>
+         /></span> </p>
         </Row>
         </div>
             
       
         <Row>
         <div className={styles.p2}>
-            <p className={styles.paragraph}>Personalized, full-funnel growth support that goes beyond channel-specific execution.</p>
+            <p className={styles.paragraph}>At SARCFO, we specialize in providing top-notch CFO advisory and bookkeeping services tailored to meet the unique needs of businesses across various industries, including Managed IT Services and E-commerce. Our mission is to empower companies with the financial insights and strategies they need to drive growth, streamline operations, and achieve long-term success.
+            </p>
         </div>
         </Row>
         <Row>
@@ -85,6 +80,7 @@ function Hero() {
            <Button className={styles.Button}>Contact Us</Button>
         </div> 
         </Row>
+        <h1 className={styles.srvc_heading}>Services</h1>
         <Row gutter={16} className={styles.CustomRow}>
         <div className={styles.slider}>
         <Marquee direction='left'> 

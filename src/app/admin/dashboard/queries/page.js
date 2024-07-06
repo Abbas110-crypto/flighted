@@ -4,8 +4,6 @@ import { Input, Button, Table } from 'antd';
 import styles from '../queries/queries.module.css';
 import Sidebar from '../../Sidebar/Sidebar';
 import api from '../../../axiosInterceptor/axiosInterceptor';
-import Link from 'next/link';
-import { ReloadOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
 
 const { Search } = Input;
@@ -14,36 +12,56 @@ const columns = [
     {
         title: 'NAME',
         dataIndex: 'name',
-        width: 30,
-    },
-    {
-        title: 'SUBJECT',
-        dataIndex: 'subject',
-        width: 30,
-    },
-    {
-        title: 'MESSAGE',
-        dataIndex: 'message',
+        key: 'name',
         width: 50,
-    },
-    {
-        title: 'COMPANY',
-        dataIndex: 'company',
-        width: 40,
+        fixed: 'left',
+        sorter: true,
+
     },
     {
         title: 'EMAIL',
         dataIndex: 'email',
-        width: 40,
+        key:'email',
+        width: 80,
+        fixed: 'left',
+        sorter: true,
+
+    },
+    {
+        title: 'SUBJECT',
+        dataIndex: 'subject',
+        key:'subject',
+        width: 80,
+        fixed: 'left',
+        sorter: true,
+
+    },
+    {
+        title: 'COMPANY',
+        dataIndex: 'company',
+        key:'company',
+        width: 80,
+        fixed: 'left',
+        sorter: true,
+
+    },
+    {
+        title: 'MESSAGE',
+        dataIndex: 'message',
+        width: 80,
+        key:'1'
     },
     {
         title: 'CREATED AT',
         dataIndex: 'submissionDateTime',
-        width: 40,
+        width: 50,
+        key: 'submissionDateTime',
+        fixed: 'right',
+
     }
 ];
 
-const ContactTable = () => {
+const Queries = () => {
     const router = useRouter();
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -53,7 +71,7 @@ const ContactTable = () => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const response = await api.get('/admin/dashboard/contact');
+            const response = await api.get('admin/dashboard/contact');
             const result = response.data;
             setData(result);
             setFilteredData(result);
@@ -63,6 +81,7 @@ const ContactTable = () => {
             setLoading(false);
         }
     };
+    useEffect(() => { document.body.style.backgroundColor = '#fff' }, [])
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -107,7 +126,7 @@ const ContactTable = () => {
                         loading={loading}
                     />
                     <Button onClick={fetchData} className={styles.button}>
-                        <ReloadOutlined style={{ fontSize: '150%' }} />
+                        REFRESH
                     </Button>
                 </>
             </div>
@@ -115,4 +134,4 @@ const ContactTable = () => {
     );
 };
 
-export default ContactTable;
+export default Queries;

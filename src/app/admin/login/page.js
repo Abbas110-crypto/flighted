@@ -21,7 +21,7 @@ const Login = () => {
         localStorage.setItem('token', Token);
         message.success('Login successful');
         console.log(Token);
-        router.push('/admin/dashboard/blog');
+        router.push('/admin/dashboard/queries');
       } else {
         message.error('Invalid login details');
       }

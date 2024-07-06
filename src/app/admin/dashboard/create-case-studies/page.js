@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { Button, Col, Input, Row, Upload, message } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import styles from '../create-blog/createblog.module.css';
+import styles from './CreateCaseStudies.module.css';
 import 'react-quill/dist/quill.snow.css';
 import Sidebar from '../../Sidebar/Sidebar';
 import dynamic from 'next/dynamic';
@@ -12,7 +12,7 @@ import api from '../../../axiosInterceptor/axiosInterceptor';
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 const { TextArea } = Input;
 
-const CreateBlog = () => {
+const CreateCaseStudies = () => {
     const router = useRouter();
     const [title, setTitle] = useState('');
     const [DateButton, setDateButton] = useState('');
@@ -21,6 +21,7 @@ const CreateBlog = () => {
     const [fileList, setFileList] = useState([]);
     const [tokenAvailable, setTokenAvailable] = useState(true); 
 
+    useEffect(() => { document.body.style.backgroundColor = '#fff' }, [])
     const handleUpdate = async () => {
         try {
             console.log('Title:', title);
@@ -45,7 +46,7 @@ const CreateBlog = () => {
             });
 
             console.log('Form data submitted successfully:', response.data);
-            router.push('./blog');
+            router.push('./case-studies');
             message.success('Blog Created');
         } catch (error) {
             console.error('Error creating blog:', error);
@@ -154,4 +155,4 @@ const CreateBlog = () => {
     );
 };
 
-export default CreateBlog;
+export default CreateCaseStudies;

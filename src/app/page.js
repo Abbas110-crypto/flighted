@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Container from "./components/Container/Container";
 import CaseStudies from "./components/Case Studies/CaseStudies";
-import Teams from './components/Teams/Teams';
 import Footer from '../app/components/Footer/Footer';
 import Testimonials from './components/Testimonials/Testimonials';
+import Advisory from './components/Advisory/Advisory';
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
     <Testimonials />
     <Container />
     <CaseStudies />
-    <Teams />
+    <Advisory />
    </div>
   );
 }

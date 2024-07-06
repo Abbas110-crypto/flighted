@@ -25,8 +25,8 @@ function Container() {
     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 12 }}>
     <div className={styles.container1}>
         <div data-aos="fade-right">
-        <h1 className={styles.h1}>Paid Media Expertise</h1>
-        <p className={styles.paragraph2}>The days of simply pushing buttons in Facebook Ads Manager are over. Our expert tactics, refined through managing $50mil+ across diverse brands, offer the winning edge, tailored to your product, spend, and price point.</p>
+        <h1 className={styles.h1}>E-commerce</h1>
+        <p className={styles.paragraph2}>In the E-commerce sector, our firm has a proven track record of helping businesses scale and manage their finances efficiently. One of our clients, a fast-growing E-commerce company, experienced significant improvements in their financial operations and strategic planning with our support.</p>
         </div>
     </div>
     </Col>
@@ -49,8 +49,8 @@ function Container() {
     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 10 }}>
     <div className={styles.container1}>
     <div data-aos="fade-right">
-        <h1 className={styles.h1}>Creative Strategy & Production</h1>
-        <p className={styles.paragraph2}>Crafting compelling ad creative is pivotal for success in performance marketing. Our meticulous testing and survey analysis unveil your customer's preferences, allowing our top-tier editors to design converting creatives tailored to your unique value propositions.</p>
+        <h1 className={styles.h1}>Financial Task Execution</h1>
+        <p className={styles.paragraph2}>We rapidly executed various financial tasks, including migrating old accounting software to QuickBooks and reviewing past years’ financial standings. This comprehensive review helped the client understand their financial trajectory and make informed projections and funding recommendations.</p>
     </div>
     </div>
     </Col>
@@ -74,8 +74,9 @@ function Container() {
     <Col xs={24} sm={24} md={12} lg={{ span: 12 }} xl={{ span: 12 }}>
     <div className={styles.container1}>
     <div data-aos="fade-right">
-        <h1 className={styles.h1}>Landing Page Optimization</h1>
-        <p className={styles.paragraph2}>If you don’t already have a landing page you feel confident in, our team will get you there. Each Flighted landing page is rooted in data, designed mobile-first, and most importantly, always living and breathing as we rigorously optimize each page through ongoing A/B Testing.</p>
+        <h1 className={styles.h1}>Strategic Recommendation</h1>
+        <p className={styles.paragraph2}>The valuable professional recommendations provided for new hires, systems, and standard operating procedures (SOPs), further enhancing the client’s operational efficiency.
+        </p>
     </div>
     </div>
     </Col>
