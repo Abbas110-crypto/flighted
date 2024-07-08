@@ -1,15 +1,22 @@
 import React from 'react'
 import styles from '../Footer/Footer.module.css'
 import { Button,Row,Col } from 'antd';
+import { useRouter } from 'next/navigation';
+
 
 function Footer() {
+  const router = useRouter();
+
+  const handleContactClick = () => {
+    router.push('/contact');
+};
   return (
     <div className={styles.main}>
       <Row>
         <Col xs={24} sm={24} md={24} lg={8} xl={12}>
         <div className={styles.text}>
             <h2 className={styles.heading}>Ready to talk?</h2>
-            <Button className={styles.Button}>Contact Us</Button>
+            <Button className={styles.Button} onClick={handleContactClick}>Contact Us</Button>
         </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={8} xl={12}>

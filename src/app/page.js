@@ -14,9 +14,9 @@ export default function Home() {
    <div>
     <Hero />
     <Testimonials />
-    <Container />
+     <Container /> 
     <CaseStudies />
-    <Advisory />
+    <Advisory />  
    </div>
   );
 }

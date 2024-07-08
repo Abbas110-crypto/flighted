@@ -2,14 +2,20 @@
 import React,{useEffect} from 'react'
 import {Row,Col, Button} from 'antd';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { initAOS } from '../../AOS/Interceptor'; // Import the AOS initialization function
 import styles from './Hero.module.css';
 import Marquee from 'react-fast-marquee';
 
 function Hero() {
+   const router = useRouter();
+
     useEffect(() => {
         initAOS(); // Call the AOS initialization function when the component mounts
       }, []);
+      const handleContactClick = () => {
+         router.push('/contact');
+     };
   return (
     <div data-aos="fade-up">
     <div className={styles.main}>
@@ -77,7 +83,7 @@ function Hero() {
         </Row>
         <Row>
         <div className={styles.p3}>
-           <Button className={styles.Button}>Contact Us</Button>
+           <Button className={styles.Button} onClick={handleContactClick}>Contact Us</Button>
         </div> 
         </Row>
         <h1 className={styles.srvc_heading}>Services</h1>
