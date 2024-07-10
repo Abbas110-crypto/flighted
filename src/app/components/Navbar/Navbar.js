@@ -14,7 +14,7 @@ const Navbar = () => {
     <div>
     <div className={styles.navbarcontainer}>
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Sarfo</div>
+      <div className={styles.logo}>Sarcfo</div>
       <ul className={styles.navLinks}>
         <li>
           <Link href="/">Home</Link>
