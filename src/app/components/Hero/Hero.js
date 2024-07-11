@@ -2,6 +2,7 @@
 import React,{useEffect} from 'react'
 import {Row,Col, Button} from 'antd';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { initAOS } from '../../AOS/Interceptor'; // Import the AOS initialization function
 import styles from './Hero.module.css';
@@ -79,12 +80,16 @@ function Hero() {
         <div className={styles.p2}>
             <p className={styles.paragraph}>At SARCFO, we specialize in offering comprehensive CFO advisory and accounting services, specifically designed to address the unique needs of e-commerce businesses. Our mission is to equip companies with the financial insights and strategies necessary to drive growth, streamline operations, and achieve long-term success.
             </p>
-            <p className={styles.paragraph}>Feel free to book a 15-minute one-on-one consultation through this link.</p>
+            <p className={styles.paragraph}>Feel free to book a 15-minute one-on-one consultation through this link or email us at <a href="mailto:info@sarcfo.com">info@sarcfo.com</a></p>
         </div>
         </Row>
         <Row>
         <div className={styles.p3}>
-           <Button className={styles.Button} onClick={handleContactClick}>Consultation Now</Button>
+        <Link href="https://calendar.app.google/u3bJRj3trudVHZ9V9" target="_blank" passHref>
+           <Button 
+           className={styles.Button}>Consultation Now</Button>
+         </Link>
+
         </div> 
         </Row>
         {/* <h1 className={styles.srvc_heading1}>Services</h1>
