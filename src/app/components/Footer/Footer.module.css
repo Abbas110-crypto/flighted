@@ -71,11 +71,15 @@
     .main {
         margin-top: 5%;
         width: auto;
-        height: 450px;
+        /* height: 450px; */
+        height: 200px;
         border: 1px solid var(--secondary);
         border-radius: 50px;
     }
-
+    .logo{
+        height: 150px;
+        width: 305px;
+    }
     .heading {
 
         color: var(--secondary);
@@ -144,7 +148,10 @@
         border: 1px solid var(--secondary);
         border-radius: 50px;
     }
-
+    .logo{
+        width: 500px;
+    height: 250px;
+    }
     .heading {
 
         color: var(--secondary);

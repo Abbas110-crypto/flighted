@@ -77,16 +77,17 @@ function Hero() {
       
         <Row>
         <div className={styles.p2}>
-            <p className={styles.paragraph}>At SARCFO, we specialize in providing top-notch CFO advisory and bookkeeping services tailored to meet the unique needs of businesses across various industries, including Managed IT Services and E-commerce. Our mission is to empower companies with the financial insights and strategies they need to drive growth, streamline operations, and achieve long-term success.
+            <p className={styles.paragraph}>At SARCFO, we specialize in offering comprehensive CFO advisory and accounting services, specifically designed to address the unique needs of e-commerce businesses. Our mission is to equip companies with the financial insights and strategies necessary to drive growth, streamline operations, and achieve long-term success.
             </p>
+            <p className={styles.paragraph}>Feel free to book a 15-minute one-on-one consultation through this link.</p>
         </div>
         </Row>
         <Row>
         <div className={styles.p3}>
-           <Button className={styles.Button} onClick={handleContactClick}>Contact Us</Button>
+           <Button className={styles.Button} onClick={handleContactClick}>Consultation Now</Button>
         </div> 
         </Row>
-        <h1 className={styles.srvc_heading}>Services</h1>
+        {/* <h1 className={styles.srvc_heading1}>Services</h1>
         <Row gutter={16} className={styles.CustomRow}>
         <div className={styles.slider}>
         <Marquee direction='left'> 
@@ -203,8 +204,11 @@ function Hero() {
             />
         </Marquee>
         </div> 
-        </Row>
+        </Row> */}
+         <h1 className={styles.srvc_heading}>Our website is currently undergoing exciting updates to better serve your financial and accounting needs. Stay tuned for a new and improved experience coming soon!</h1>
+
         </div>
+
   )
 }
 

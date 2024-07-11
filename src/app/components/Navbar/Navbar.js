@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './Navbar.module.css';
 import { Button } from 'antd';
 import { initAOS } from '../../AOS/Interceptor'; // Import the AOS initialization function
+import Image from 'next/image';
 
 
 const Navbar = () => {
@@ -14,12 +15,17 @@ const Navbar = () => {
     <div>
     <div className={styles.navbarcontainer}>
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Sarcfo</div>
+      <Image 
+      src="https://i.ibb.co/XDZFbPS/png0-02.png"
+      width={350}
+      height={50}
+      className={styles.logo} />
+     {/*
       <ul className={styles.navLinks}>
         <li>
           <Link href="/">Home</Link>
         </li>
-        <li>
+         <li>
           <Link href="/case-studies">Case Studies</Link>
         </li>
       </ul>
@@ -29,7 +35,7 @@ const Navbar = () => {
         Contact Us
         </Link> 
         </button>
-      
+       */}
     </nav>
     </div>
     </div>

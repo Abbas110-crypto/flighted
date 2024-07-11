@@ -22,14 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Sarfo</title>
+        <title>Sarcfo</title>
+        <link rel="icon" href="/favicon.ico" />
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet" />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
         {!isAdminPanel && <Navbar />}
         {children}
-        {!isAdminPanel && <Footer />}
+        {/* {!isAdminPanel && <Footer />} */}
       </body>
     </html>
   );
